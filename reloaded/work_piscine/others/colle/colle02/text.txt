@@ -1,0 +1,75 @@
+Greg t'es trop mon pote si
+➜  colle02 ls
+42                             cours_lire_et_ecrire_fichier.c read_base.c
+43                             ex00                           text.txt
+a.out                          main_test_pour_read_base.c
+cours_42.c                     read.c
+➜  colle02 cd ..
+➜  colle ls
+colle00        colle01        colle02        colle02_github
+➜  colle cd colle02
+➜  colle02 ls
+42                             cours_lire_et_ecrire_fichier.c read_base.c
+43                             ex00                           text.txt
+a.out                          main_test_pour_read_base.c
+cours_42.c                     read.c
+➜  colle02 cp read_base.c ../colle02_github
+➜  colle02 cp main_test_pour_read_base.c ../colle02_github
+➜  colle02 cd ..
+➜  colle ls
+colle00        colle01        colle02        colle02_github
+➜  colle cd colle02_github
+➜  colle02_github git:(master) ✗ ls
+docs_vi                    main_test_pour_read_base.c read_base.c
+➜  colle02_github git:(master) ✗ git add main_test_pour_read_base.c read_base.c
+➜  colle02_github git:(master) ✗ commit -m "pour Gaetan: read_base.c (fonction de read)"
+zsh: command not found: commit
+➜  colle02_github git:(master) ✗ git commit -m "pour Gaetan: read_base.c (fonction de read)"
+[master 1bfa9ab] pour Gaetan: read_base.c (fonction de read)
+ Committer: Vi reangsy HONG <vi-hong@e3r3p21.42.fr>
+ Your name and email address were configured automatically based
+ on your username and hostname. Please check that they are accurate.
+ You can suppress this message by setting them explicitly. Run the
+ following command and follow the instructions in your editor to edit
+ your configuration file:
+ 
+     git config --global --edit
+	 
+	 After doing this, you may fix the identity used for this commit with:
+	 
+	     git commit --amend --reset-author
+		 
+		  2 files changed, 98 insertions(+)
+		   create mode 100644 main_test_pour_read_base.c
+		    create mode 100644 read_base.c
+			➜  colle02_github git:(master) ✗ git push
+			warning: push.default is unset; its implicit value has changed in
+			Git 2.0 from 'matching' to 'simple'. To squelch this message
+			and maintain the traditional behavior, use:
+			
+			  git config --global push.default matching
+			  
+			  To squelch this message and adopt the new behavior now, use:
+			  
+			    git config --global push.default simple
+				
+				When push.default is set to 'matching', git will push local branches
+				to the remote branches that already exist with the same name.
+				
+				Since Git 2.0, Git defaults to the more conservative 'simple'
+				behavior, which only pushes the current branch to the corresponding
+				remote branch that 'git pull' uses to update the current branch.
+				
+				See 'git help config' and search for 'push.default' for further information.
+				(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+				'current' instead of 'simple' if you sometimes use older versions of Git)
+				
+				Counting objects: 4, done.
+				Delta compression using up to 4 threads.
+				Compressing objects: 100% (4/4), done.
+				Writing objects: 100% (4/4), 1.07 KiB | 0 bytes/s, done.
+				Total 4 (delta 0), reused 0 (delta 0)
+				To https://github.com/vihong/colle02.git
+				   a8ebb7c..1bfa9ab  master -> master
+				   ➜  colle02_github git:(master) ✗
+				   si
